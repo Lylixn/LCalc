@@ -33,8 +33,3 @@ jobs:
 
       - name: build app
         run: npm run build
-
-      - uses: actions/upload-artifact@v3
-        with:
-          name: ${{ matrix.os }} Build
-          path: lesio-*
