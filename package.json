@@ -1,0 +1,24 @@
+{
+  "name": "lesio",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^17.1.1",
+    "electron-builder": "^22.14.13"
+  },
+  "dependencies": {
+    "safe-eval": "^0.4.1"
+  },
+  "build": {
+    "appId": "fr.lylixn.lesio",
+    "icon": "icon_lesio.png"
+  },
+  "win": {
+    "target": "msi"
+  }
+}

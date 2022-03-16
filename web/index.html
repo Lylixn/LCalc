@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/color.css" rel="stylesheet">
+
+
+    <link href="css/calculs_header.css" rel="stylesheet">
+    <link href="css/calculs_page.css" rel="stylesheet">
+    <link href="css/titlebar.css" rel="stylesheet">
+
+    <title>Lesio</title>
+  </head>
+  <body>
+
+    <section class="titlebar">
+      <div class="left">
+        <img src="../icon_lesio.png">
+        <p>Lesio</p>
+      </div>
+      <div class="drag"></div>
+      <div class="control">
+        <a id="reduce" class="background_green"></a>
+        <a id="fullscreen" class="background_yellow"></a>
+        <a id="close" class="background_red"></a>
+      </div>
+    </section>
+
+    <div id="page">
+      <header>
+        <ul id="calc_result">
+        </ul>
+      </header>
+      <section>
+        <button onclick="calc_input.clear()">X</button>
+        <input id="calc_input" type="text" spellcheck="false">
+
+        <div class="calc_grid">
+          <button class="color_focus" onclick="calc_input.add_simple_char('Math.cos()')">cos</button>
+          <button class="color_focus" onclick="calc_input.add_simple_char('Math.sin()')">sin</button>
+          <button class="color_focus" onclick="calc_input.add_simple_char('Math.tan()')">tan</button>
+          <button class="color_second_focus" onclick="calc_input.add_simple_char('Math.PI')">Pi</button>
+          <button class="color_focus" onclick="calc_input.add_simple_char('Math.acos()')">acos</button>
+          <button class="color_focus" onclick="calc_input.add_simple_char('Math.asin()')">asin</button>
+          <button class="color_focus" onclick="calc_input.add_simple_char('Math.atan()')">atan</button>
+          <button class="color_second_focus" onclick="calc_input.add_simple_char('Math.E')">Euler</button>
+          <button class="color_focus" onclick="calc_input.add_simple_char('Math.pow(,2)')">pow</button>
+          <button class="color_focus" onclick="calc_input.add_simple_char('Math.srqt()')">sqrt</button>
+          <button class="color_second_focus" onclick="calc_input.add_simple_char(this.innerText)">(</button>
+          <button class="color_second_focus" onclick="calc_input.add_simple_char(this.innerText)">)</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">9</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">8</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">7</button>
+          <button class="color_second_focus" onclick="calc_input.add_simple_char(this.innerText)">-</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">4</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">5</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">6</button>
+          <button class="color_second_focus" onclick="calc_input.add_simple_char(this.innerText)">+</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">1</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">2</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">3</button>
+          <button class="color_second_focus" onclick="calc_input.add_simple_char(this.innerText)">*</button>
+          <button class="color_lightwhite" onclick="calc_input.add_simple_char(this.innerText)">0</button>
+          <button class="color_focus" onclick="calc_input.add_simple_char(this.innerText)">.</button>
+          <button class="color_second_focus" onclick="calc_input.add_simple_char(this.innerText)">/</button>
+          <button class="color_focus" id="result_button">Result</button>
+        </div>
+      </section>
+    </div>
+
+  <!-- You can also require other files to run in this process -->
+    <script src="../renderer.js"></script>
+    <script nonce="calcul" src="./js/control.js"></script>
+    <script nonce="calcul" src="./js/calculs.js"></script>
+  </body>
+</html>

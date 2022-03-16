@@ -1,0 +1,16 @@
+#page > header {
+    overflow-y: scroll;
+    height: 100px;
+    border-bottom: 3px solid #23262F;
+    text-align: right;
+}
+
+#page > header > ul > li {
+    margin: 10px 10px;
+    background-color: #23262F;
+    color: white;
+    border-radius: 15px;
+}
+#page > header > ul > li > ul > li {
+    padding: 5px 30px;
+}

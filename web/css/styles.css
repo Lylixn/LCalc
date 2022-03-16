@@ -1,0 +1,49 @@
+/* styles.css */
+
+/* aldrich-regular - latin */
+@font-face {
+    font-family: 'Aldrich';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/aldrich-v11-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../fonts/aldrich-v11-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/aldrich-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/aldrich-v11-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/aldrich-v11-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/aldrich-v11-latin-regular.svg#Aldrich') format('svg'); /* Legacy iOS */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+    font-family: Aldrich;
+    user-select: none;
+}
+
+a {
+    color: unset;
+}
+
+/* width */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Add styles here to customize the appearance of your app */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: #1e2126;
+    overflow: hidden;
+}
+
+#page {
+    height: calc(100vh - 30px);
+    width: 100vw;
+}

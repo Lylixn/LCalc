@@ -1,0 +1,46 @@
+.color_gray {
+    color: #595959;
+}
+
+.color_lightgray {
+    color: #989898;
+}
+
+
+.color_graywhite {
+    color: #808080;
+}
+
+.color_lightwhite {
+    color: #cccccc;
+}
+
+.color_focus {
+    color: #1AB965;
+}
+
+.color_second_focus {
+    color: #ff7676;
+}
+
+.background_red {
+    background-color: red;
+    transition: background-color 500ms ease-in-out;
+}
+.background_yellow {
+    background-color: orange;
+    transition: background-color 500ms ease-in-out;
+}
+.background_green {
+    background-color: green;
+    transition: background-color 500ms ease-in-out;
+}
+.background_red:hover {
+    background-color: #ff5252;
+}
+.background_yellow:hover {
+    background-color: #ffbe4b;
+}
+.background_green:hover {
+    background-color: #4bff4b;
+}
