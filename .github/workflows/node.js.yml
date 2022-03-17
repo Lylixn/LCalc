@@ -33,3 +33,9 @@ jobs:
 
       - name: build app
         run: npm run make
+
+      - name: upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.os }}-exe
+          path: dist/lesio-*
