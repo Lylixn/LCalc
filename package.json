@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-builder",
-    "make": "electron-builder"
+    "make": "electron-builder --publish=never"
   },
   "devDependencies": {
     "electron": "^17.1.1",
