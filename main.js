@@ -21,7 +21,7 @@ class App {
       height: 600,
       minHeight: 600,
       frame: false,
-      icon: 'icon_lesio.png',
+      icon: 'icon.png',
       webPreferences: {
         preload: path.join(__dirname, 'preload.js'),
         nodeIntegration: true,
