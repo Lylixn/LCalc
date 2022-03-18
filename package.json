@@ -1,11 +1,11 @@
 {
-  "name": "lesio",
+  "name": "LCalc",
   "version": "1.0.0",
   "license": "MIT",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder",
+    "build": "electron-builder ",
     "make": "electron-builder --publish=never"
   },
   "devDependencies": {
@@ -16,10 +16,7 @@
     "safe-eval": "^0.4.1"
   },
   "build": {
-    "appId": "fr.lylixn.lesio",
-    "icon": "icon_lesio.png"
-  },
-  "win": {
-    "target": "msi"
+    "appId": "fr.lesio.lcalc",
+    "icon": "icon.png"
   }
 }
